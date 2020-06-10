@@ -11,7 +11,8 @@ class Summary extends Component {
 
     state = {
         summary: null,
-        loading: true
+        loading: true,
+        hasData: false,
     };
 
     GetContent = () => {
@@ -23,7 +24,7 @@ class Summary extends Component {
                     </Col>
                 </Row>
             )
-        } else if (this.state.summary !== null) {
+        } else if (this.state.hasData) {
             const data = this.state.summary;
             return (
                 <>
@@ -95,7 +96,8 @@ class Summary extends Component {
             axios.get("https://api.covid19api.com/summary").then(res => {
                 this.setState({
                     summary: res.data,
-                    loading: false
+                    loading: false,
+                    hasData: true
                 })
             })
         } catch (e) {

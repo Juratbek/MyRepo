@@ -106,14 +106,3 @@ class Detailed extends Component {
 }
 
 export default Detailed;
-
-// Country: "Afghanistan"
-// CountryCode: "AF"
-// Date: "2020-06-08T18:00:04Z"
-// NewConfirmed: 791
-// NewDeaths: 30
-// NewRecovered: 45
-// Slug: "afghanistan"
-// TotalConfirmed: 20342
-// TotalDeaths: 357
-// TotalRecovered: 1875

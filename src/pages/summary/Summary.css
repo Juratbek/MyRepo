@@ -1,0 +1,9 @@
+.paper p {
+  margin: 0; }
+
+.paper {
+  height: 210px; }
+  .paper:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=Summary.css.map */

@@ -1,0 +1,11 @@
+.paper p {
+  margin: 0
+}
+
+.paper {
+  height: 210px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
